@@ -102,6 +102,8 @@ void lureAnimation(int centerX, int centerY, int x)      // BROKEN
         cogdx[id] = 0;
         cogdy[id] = 0;
         lureHit[id] = true;
+        //luredx[id] = 0;
+        //luredy[id] = 0;
     }
     if (towerAnimation[x] == 20)
     {
