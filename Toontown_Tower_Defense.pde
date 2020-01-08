@@ -178,6 +178,7 @@ String gag()
     return "Drop";
 }
 
+//  Work on shortening this
 void mouseClicked()
 {
   gagSelected = gagClicked();
@@ -187,7 +188,16 @@ void mouseClicked()
   {
     if (mouseX >= 140 && mouseX <= 220)
     {
-      if (mouseY >= 240 && mouseY <= 320)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i] && mouseY >= 240 + 80*i && mouseY <= 320 + 80*i)
+        {
+          towers[i] = true;
+          towersGags[i] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 240 && mouseY <= 320)
       {
         towers[0] = true;
         towersGags[0] = gag;
@@ -216,11 +226,20 @@ void mouseClicked()
       {
         towers[5] = true;
         towersGags[5] = gag;
-      }
+      } */
     }
     else if (mouseX >= 280 && mouseX <= 360)
     {
-      if (mouseY >= 200 && mouseY <= 280)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+6] && mouseY >= 200 + 80*i && mouseY <= 280 + 80*i)
+        {
+          towers[i+6] = true;
+          towersGags[i+6] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 200 && mouseY <= 280)
       {
         towers[6] = true;
         towersGags[6] = gag;
@@ -249,11 +268,20 @@ void mouseClicked()
       {
         towers[11] = true;
         towersGags[11] = gag;
-      }
+      } */
     }
     else if (mouseX >= 420 && mouseX <= 500)
     {
-      if (mouseY >= 240 && mouseY <= 320)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+12] && mouseY >= 240 + 80*i && mouseY <= 320 + 80*i)
+        {
+          towers[i+12] = true;
+          towersGags[i+12] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 240 && mouseY <= 320)
       {
         towers[12] = true;
         towersGags[12] = gag;
@@ -282,11 +310,20 @@ void mouseClicked()
       {
         towers[17] = true;
         towersGags[17] = gag;
-      }
+      } */
     }
     else if (mouseX >= 560 && mouseX <= 640)
     {
-      if (mouseY >= 200 && mouseY <= 280)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+18] && mouseY >= 200 + 80*i && mouseY <= 280 + 80*i)
+        {
+          towers[i+18] = true;
+          towersGags[i+18] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 200 && mouseY <= 280)
       {
         towers[18] = true;
         towersGags[18] = gag;
@@ -315,11 +352,20 @@ void mouseClicked()
       {
         towers[23] = true;
         towersGags[23] = gag;
-      }
+      } */
     }
     else if (mouseX >= 700 && mouseX <= 780)
     {
-      if (mouseY >= 240 && mouseY <= 320)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+24] && mouseY >= 240 + 80*i && mouseY <= 320 + 80*i)
+        {
+          towers[i+24] = true;
+          towersGags[i+24] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 240 && mouseY <= 320)
       {
         towers[24] = true;
         towersGags[24] = gag;
@@ -348,11 +394,20 @@ void mouseClicked()
       {
         towers[29] = true;
         towersGags[29] = gag;
-      }
+      }*/
     }
     else if (mouseX >= 840 && mouseX <= 920)
     {
-      if (mouseY >= 200 && mouseY <= 280)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+30] && mouseY >= 200 + 80*i && mouseY <= 280 + 80*i)
+        {
+          towers[i+30] = true;
+          towersGags[i+30] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 200 && mouseY <= 280)
       {
         towers[30] = true;
         towersGags[30] = gag;
@@ -381,11 +436,20 @@ void mouseClicked()
       {
         towers[35] = true;
         towersGags[35] = gag;
-      }
+      } */
     }
     else if (mouseX >= 980 && mouseX <= 1040)
     {
-      if (mouseY >= 240 && mouseY <= 320)
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i+36] && mouseY >= 240 + 80*i && mouseY <= 320 + 80*i)
+        {
+          towers[i+36] = true;
+          towersGags[i+36] = gag;
+          break;
+        }
+      }
+      /* if (mouseY >= 240 && mouseY <= 320)
       {
         towers[36] = true;
         towersGags[36] = gag;
@@ -418,7 +482,7 @@ void mouseClicked()
       else
       {
         gagSelected = false;
-      }
+      } */
     }
   }
 }
