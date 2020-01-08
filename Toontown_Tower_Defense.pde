@@ -186,6 +186,18 @@ void mouseClicked()
     gag = gag();
   else
   {
+    for (int i = 0; i < 42; i++)
+    {
+      if (!towers[i] && mouseX >= towersX[i] && mouseX <= towersX[i]+80
+                     && mouseY >= towersY[i] && mouseY <= towersY[i]+80)
+      {
+        towers[i] = true;
+        towersGags[i] = gag;
+        break;
+      }
+    }
+    
+    /*
     if (mouseX >= 140 && mouseX <= 220)
     {
       for (int i = 0; i < 6; i++)
@@ -226,7 +238,7 @@ void mouseClicked()
       {
         towers[5] = true;
         towersGags[5] = gag;
-      } */
+      } 
     }
     else if (mouseX >= 280 && mouseX <= 360)
     {
@@ -268,7 +280,7 @@ void mouseClicked()
       {
         towers[11] = true;
         towersGags[11] = gag;
-      } */
+      } 
     }
     else if (mouseX >= 420 && mouseX <= 500)
     {
@@ -310,7 +322,7 @@ void mouseClicked()
       {
         towers[17] = true;
         towersGags[17] = gag;
-      } */
+      }
     }
     else if (mouseX >= 560 && mouseX <= 640)
     {
@@ -352,7 +364,7 @@ void mouseClicked()
       {
         towers[23] = true;
         towersGags[23] = gag;
-      } */
+      }
     }
     else if (mouseX >= 700 && mouseX <= 780)
     {
@@ -394,7 +406,7 @@ void mouseClicked()
       {
         towers[29] = true;
         towersGags[29] = gag;
-      }*/
+      }
     }
     else if (mouseX >= 840 && mouseX <= 920)
     {
@@ -436,7 +448,7 @@ void mouseClicked()
       {
         towers[35] = true;
         towersGags[35] = gag;
-      } */
+      }
     }
     else if (mouseX >= 980 && mouseX <= 1040)
     {
@@ -482,7 +494,8 @@ void mouseClicked()
       else
       {
         gagSelected = false;
-      } */
+      }
     }
+    */
   }
 }
