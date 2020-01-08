@@ -187,6 +187,15 @@ void mouseClicked()
   {
     if (mouseX >= 140 && mouseX <= 220)
     {
+      for (int i = 0; i < 6; i++)
+      {
+        if (!towers[i] && mouseY >= 240 + 80*i && mouseY <= 320 + 80*i)
+        {
+          towers[i] = true;
+          towersGags[i] = gag;
+          break;
+        }
+      }
       if (mouseY >= 240 && mouseY <= 320)
       {
         towers[0] = true;
