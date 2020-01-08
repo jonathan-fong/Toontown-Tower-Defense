@@ -196,7 +196,7 @@ void mouseClicked()
           break;
         }
       }
-      if (mouseY >= 240 && mouseY <= 320)
+      /* if (mouseY >= 240 && mouseY <= 320)
       {
         towers[0] = true;
         towersGags[0] = gag;
@@ -225,7 +225,7 @@ void mouseClicked()
       {
         towers[5] = true;
         towersGags[5] = gag;
-      }
+      }*/
     }
     else if (mouseX >= 280 && mouseX <= 360)
     {
