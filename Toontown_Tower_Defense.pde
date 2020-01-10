@@ -178,6 +178,8 @@ String gag()
     return "Drop";
 }
 
+
+// Work on shortening this
 void mouseClicked()
 {
   gagSelected = gagClicked();
@@ -225,7 +227,7 @@ void mouseClicked()
       {
         towers[5] = true;
         towersGags[5] = gag;
-      }*/
+      } */
     }
     else if (mouseX >= 280 && mouseX <= 360)
     {
